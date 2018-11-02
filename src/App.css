@@ -1,0 +1,22 @@
+.App {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.App-flex1 {
+    -webkit-flex: 1;
+            flex: 1;
+}
+.App-flex2 {
+    -webkit-flex: 2;
+            flex: 2;
+}
+.App-flex3 {
+    -webkit-flex: 3;
+            flex: 3;
+}
+
+.App-flexCol {
+    display: flex;
+    flex-direction: column;
+}
