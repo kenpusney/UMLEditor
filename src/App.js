@@ -41,6 +41,15 @@ class App extends Component {
     );
   }
 
+  componentDidMount() {
+    if (window.location.search) {
+      const params = new URLSearchParams(window.location.search);
+      if (params.has("source")) {
+        this.onTextChangeUpdate(decodeURIComponent(params.get("source")))
+      }
+    }
+  }
+
   onTextChangeUpdate = (source) => {
     const state = {
       source,
